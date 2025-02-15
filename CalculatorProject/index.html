@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Web App</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div id="calculator">
+    <input type="text" id="input_number" readonly>
+    <div class="button_container">
+      <button class="button" onclick="clearInput()">C</button>
+      <button class="button" onclick="appendNumber('1')">1</button>
+      <button class="button" onclick="appendNumber('2')">2</button>
+      <button class="button" onclick="appendNumber('3')">3</button>
+      <button class="button" onclick="appendOperator('+')">+</button>
+      <button class="button" onclick="appendNumber('4')">4</button>
+      <button class="button" onclick="appendNumber('5')">5</button>
+      <button class="button" onclick="appendNumber('6')">6</button>
+      <button class="button" onclick="appendOperator('-')">−</button>
+      <button class="button" onclick="appendNumber('7')">7</button>
+      <button class="button" onclick="appendNumber('8')">8</button>
+      <button class="button" onclick="appendNumber('9')">9</button>
+      <button class="button" onclick="appendOperator('*')">×</button>
+      <button class="button" onclick="appendNumber('0')">0</button>
+      <button class="button" onclick="appendDot()">.</button>
+      <button class="button" onclick="calculateResult()">=</button>
+      <button class="button" onclick="appendOperator('/')">÷</button>
+    </div>
+    <!-- Dark Mode Toggle Button -->
+    <button id="toggle-dark-mode" onclick="toggleDarkMode()">Dark Mode</button>
+  </div>
+  <script src="index.js"></script>
+</body>
+</html>
